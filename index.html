@@ -35,6 +35,31 @@
     </div>
 </nav>
 
+<div class="ticker-wrap">
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+        {
+          "symbols": [
+            { "proName": "NSE:NIFTY", "title": "NIFTY 50" },
+            { "proName": "BSE:SENSEX", "title": "SENSEX" },
+            { "proName": "NASDAQ:IXIC", "title": "NASDAQ" },
+            { "proName": "SP:SPX", "title": "S&P 500" },
+            { "proName": "NASDAQ:AAPL", "title": "Apple" },
+            { "proName": "NASDAQ:MSFT", "title": "Microsoft" },
+            { "proName": "NASDAQ:NVDA", "title": "NVIDIA" },
+            { "proName": "NSE:RELIANCE", "title": "Reliance" },
+            { "proName": "NSE:TCS", "title": "TCS" }
+          ],
+          "colorTheme": "dark",
+          "isTransparent": true,
+          "showSymbolLogo": true,
+          "locale": "in"
+        }
+        </script>
+    </div>
+</div>
+
 <main class="dashboard-container">
     
     <section id="hero" class="dashboard-section hero-section glass-panel">
@@ -54,9 +79,6 @@
                 </button>
                 <a href="https://www.linkedin.com/in/murugan2606/" target="_blank" class="btn btn-icon">
                     <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://muruganarunachakamk.github.io/Murugan-portfolio/" target="_blank" class="btn btn-icon">
-                    <i class="fas fa-globe"></i>
                 </a>
             </div>
         </div>
@@ -254,39 +276,96 @@
 
     <div class="grid-layout-3col">
         
-        <section id="certifications" class="dashboard-section glass-panel">
+        <section id="certifications" class="dashboard-section glass-panel cert-section-full">
             <div class="section-header">
                 <h2><i class="fas fa-award"></i> Certifications</h2>
             </div>
-            <div class="cert-list">
-                <div class="cert-item">
-                    <i class="fas fa-check-circle cert-icon"></i>
-                    <div class="cert-info">
-                        <h4>Financial Modeling & Valuation with AI</h4>
-                        <p>Internshala | Apr 2026</p>
+            <div class="cert-grid">
+
+                <div class="cert-card">
+                    <div class="cert-card-top">
+                        <div class="cert-org-badge">Internshala Trainings</div>
+                        <span class="cert-verify-badge"><i class="fas fa-check-circle"></i> Verified</span>
+                    </div>
+                    <h3 class="cert-card-title">Financial Modeling and Valuation with AI Training</h3>
+                    <div class="cert-card-meta">
+                        <span><i class="fas fa-calendar-alt"></i> Apr 30, 2026</span>
+                        <span><i class="fas fa-id-badge"></i> 1zhmoid2it0</span>
+                    </div>
+                    <div class="cert-skills">
+                        <span class="tool-tag">MS Excel</span>
+                        <span class="tool-tag">AI-Powered Excel</span>
+                        <span class="tool-tag">Prompt Engineering</span>
+                        <span class="tool-tag">Valuation</span>
+                    </div>
+                    <div class="cert-card-actions">
+                        <a href="https://trainings.internshala.com/verify_certificate" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-shield-alt"></i> Verify</a>
+                        <a href="Financial_Modeling_and_Valuation_with_AI_Training_-_Certificate_of_Completion__1_.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> View Certificate</a>
                     </div>
                 </div>
-                <div class="cert-item">
-                    <i class="fas fa-check-circle cert-icon"></i>
-                    <div class="cert-info">
-                        <h4>Generative AI: Intro and Applications</h4>
-                        <p>IBM / Coursera | May 2026</p>
+
+                <div class="cert-card">
+                    <div class="cert-card-top">
+                        <div class="cert-org-badge">Microsoft</div>
+                        <span class="cert-verify-badge"><i class="fas fa-check-circle"></i> Verified</span>
+                    </div>
+                    <h3 class="cert-card-title">Microsoft Office Specialist: Excel 2019 Associate</h3>
+                    <div class="cert-card-meta">
+                        <span><i class="fas fa-calendar-alt"></i> Jan 25, 2026</span>
+                        <span><i class="fas fa-id-badge"></i> w6Tsv-48X9</span>
+                    </div>
+                    <div class="cert-skills">
+                        <span class="tool-tag">Excel 2019</span>
+                        <span class="tool-tag">PivotTables</span>
+                        <span class="tool-tag">Formulas</span>
+                    </div>
+                    <div class="cert-card-actions">
+                        <a href="https://verify.certiport.com" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-shield-alt"></i> Verify</a>
+                        <a href="Excel_2019_Associate__8_.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> View Certificate</a>
                     </div>
                 </div>
-                <div class="cert-item">
-                    <i class="fas fa-check-circle cert-icon"></i>
-                    <div class="cert-info">
-                        <h4>Generative AI: Prompt Engineering Basics</h4>
-                        <p>IBM / Coursera | May 2026</p>
+
+                <div class="cert-card">
+                    <div class="cert-card-top">
+                        <div class="cert-org-badge">IBM / Coursera</div>
+                        <span class="cert-verify-badge"><i class="fas fa-check-circle"></i> Verified</span>
+                    </div>
+                    <h3 class="cert-card-title">Generative AI: Introduction and Applications</h3>
+                    <div class="cert-card-meta">
+                        <span><i class="fas fa-calendar-alt"></i> May 1, 2026</span>
+                        <span><i class="fas fa-id-badge"></i> FCEZ1K4L8KL3</span>
+                    </div>
+                    <div class="cert-skills">
+                        <span class="tool-tag">Generative AI</span>
+                        <span class="tool-tag">AI Applications</span>
+                    </div>
+                    <div class="cert-card-actions">
+                        <a href="https://coursera.org/verify/FCEZ1K4L8KL3" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-shield-alt"></i> Verify</a>
+                        <a href="Coursera_Introduction_to_Gen_AI.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> View Certificate</a>
                     </div>
                 </div>
-                <div class="cert-item">
-                    <i class="fas fa-check-circle cert-icon"></i>
-                    <div class="cert-info">
-                        <h4>MOS: Excel Associate 2019</h4>
-                        <p>Microsoft | Jan 2026</p>
+
+                <div class="cert-card">
+                    <div class="cert-card-top">
+                        <div class="cert-org-badge">IBM / Coursera</div>
+                        <span class="cert-verify-badge"><i class="fas fa-check-circle"></i> Verified</span>
+                    </div>
+                    <h3 class="cert-card-title">Generative AI: Prompt Engineering Basics</h3>
+                    <div class="cert-card-meta">
+                        <span><i class="fas fa-calendar-alt"></i> May 20, 2026</span>
+                        <span><i class="fas fa-id-badge"></i> BJL1RKJOKXI1</span>
+                    </div>
+                    <div class="cert-skills">
+                        <span class="tool-tag">Prompt Engineering</span>
+                        <span class="tool-tag">Generative AI</span>
+                        <span class="tool-tag">ChatGPT</span>
+                    </div>
+                    <div class="cert-card-actions">
+                        <a href="https://coursera.org/verify/BJL1RKJOKXI1" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-shield-alt"></i> Verify</a>
+                        <a href="Coursera_Prompt_Engineering_Basics.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> View Certificate</a>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -361,7 +440,6 @@
             <p>MBA Finance | Portfolio</p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/murugan2606/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://muruganarunachakamk.github.io/Murugan-portfolio/" target="_blank" aria-label="Portfolio"><i class="fas fa-external-link-alt"></i></a>
             </div>
         </div>
     </div>
