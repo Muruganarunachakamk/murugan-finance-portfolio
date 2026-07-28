@@ -826,6 +826,125 @@ color: var(--text-muted);
 font-size: 0.85rem;
 }
 
+/* Stock Ticker */
+.ticker-wrap {
+position: fixed;
+top: 65px;
+width: 100%;
+z-index: 999;
+background: var(--glass-bg);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+border-bottom: 1px solid var(--glass-border);
+padding: 4px 0;
+}
+
+.dashboard-container {
+margin-top: 145px;
+}
+
+/* Certifications: allow section to span full grid width */
+.cert-section-full {
+grid-column: 1 / -1;
+}
+
+.grid-layout-3col .cert-section-full {
+grid-column: 1 / -1;
+}
+
+.cert-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 1.5rem;
+}
+
+.cert-card {
+background: var(--glass-bg);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid var(--glass-border);
+border-radius: 12px;
+padding: 1.5rem;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+transition: var(--transition);
+}
+
+.cert-card:hover {
+transform: translateY(-5px);
+background: var(--card-hover);
+border-color: rgba(29, 78, 216, 0.3);
+box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+}
+
+.cert-card-top {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 0.5rem;
+}
+
+.cert-org-badge {
+font-size: 0.8rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+color: var(--accent-light);
+padding: 0.3rem 0.8rem;
+background: rgba(29, 78, 216, 0.1);
+border: 1px solid rgba(29, 78, 216, 0.2);
+border-radius: 20px;
+}
+
+.cert-verify-badge {
+font-size: 0.8rem;
+font-weight: 600;
+color: #22c55e;
+display: inline-flex;
+align-items: center;
+gap: 0.4rem;
+}
+
+.cert-card-title {
+font-size: 1.1rem;
+font-weight: 600;
+color: var(--text-main);
+line-height: 1.4;
+}
+
+.cert-card-meta {
+display: flex;
+flex-wrap: wrap;
+gap: 1.2rem;
+font-size: 0.85rem;
+color: var(--text-muted);
+}
+
+.cert-card-meta i {
+color: var(--accent-blue);
+margin-right: 0.3rem;
+}
+
+.cert-skills {
+display: flex;
+flex-wrap: wrap;
+gap: 0.5rem;
+}
+
+.cert-card-actions {
+display: flex;
+gap: 0.8rem;
+margin-top: auto;
+flex-wrap: wrap;
+}
+
+.btn-sm {
+padding: 0.5rem 1rem;
+font-size: 0.85rem;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
 .grid-layout-2col, .grid-layout-3col {
@@ -835,6 +954,9 @@ grid-template-columns: 1fr;
 grid-template-columns: repeat(3, 1fr);
 }
 .projects-grid {
+grid-template-columns: 1fr;
+}
+.cert-grid {
 grid-template-columns: 1fr;
 }
 }
@@ -872,5 +994,11 @@ text-align: left;
 }
 .social-links {
 justify-content: flex-start;
+}
+.ticker-wrap {
+top: 60px;
+}
+.dashboard-container {
+margin-top: 130px;
 }
 }
