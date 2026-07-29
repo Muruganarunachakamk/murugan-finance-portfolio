@@ -1,5 +1,5 @@
 const themeToggleBtn = document.getElementById('theme-toggle');
-const htmlElement = document.documentElement;
+const htmlElement = document.body;
 const themeIcon = themeToggleBtn.querySelector('i');
 
 themeToggleBtn.addEventListener('click', () => {
