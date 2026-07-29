@@ -145,8 +145,8 @@ const downloadBtn = document.getElementById('download-resume');
 if (downloadBtn) {
     downloadBtn.addEventListener('click', () => {
         const link = document.createElement('a');
-        link.href = 'Murugan_Arunachalam_K_Finance_Resume.docx';
-        link.download = 'Murugan_Arunachalam_K_Finance_Resume.docx';
+        link.href = 'https://raw.githubusercontent.com/Muruganarunachakamk/murugan-finance-portfolio/main/Murugan_Arunachalam_K_Finance_Resume.pdf';
+        link.download = 'Murugan_Arunachalam_K_Finance_Resume.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
