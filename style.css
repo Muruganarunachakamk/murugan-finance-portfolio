@@ -828,19 +828,19 @@ font-size: 0.85rem;
 
 /* Stock Ticker */
 .ticker-wrap {
-position: fixed;
-top: 65px;
+position: relative;
 width: 100%;
-z-index: 999;
+margin-top: 65px;
 background: var(--glass-bg);
 backdrop-filter: blur(12px);
 -webkit-backdrop-filter: blur(12px);
 border-bottom: 1px solid var(--glass-border);
-padding: 4px 0;
+padding: 6px 0;
+min-height: 46px;
 }
 
 .dashboard-container {
-margin-top: 145px;
+margin-top: 20px;
 }
 
 /* Certifications: allow section to span full grid width */
@@ -996,9 +996,6 @@ text-align: left;
 justify-content: flex-start;
 }
 .ticker-wrap {
-top: 60px;
-}
-.dashboard-container {
-margin-top: 130px;
+margin-top: 60px;
 }
 }
