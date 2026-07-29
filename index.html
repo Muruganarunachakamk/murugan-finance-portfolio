@@ -36,28 +36,31 @@
 </nav>
 
 <div class="ticker-wrap">
+    <!-- TradingView Widget BEGIN -->
     <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
         {
           "symbols": [
-            { "proName": "NSE:NIFTY", "title": "NIFTY 50" },
-            { "proName": "BSE:SENSEX", "title": "SENSEX" },
-            { "proName": "NASDAQ:IXIC", "title": "NASDAQ" },
-            { "proName": "SP:SPX", "title": "S&P 500" },
-            { "proName": "NASDAQ:AAPL", "title": "Apple" },
-            { "proName": "NASDAQ:MSFT", "title": "Microsoft" },
-            { "proName": "NASDAQ:NVDA", "title": "NVIDIA" },
-            { "proName": "NSE:RELIANCE", "title": "Reliance" },
-            { "proName": "NSE:TCS", "title": "TCS" }
+            { "description": "NIFTY 50", "proName": "NSE:NIFTY" },
+            { "description": "SENSEX", "proName": "BSE:SENSEX" },
+            { "description": "NASDAQ", "proName": "NASDAQ:IXIC" },
+            { "description": "S&P 500", "proName": "SP:SPX" },
+            { "description": "Apple", "proName": "NASDAQ:AAPL" },
+            { "description": "Microsoft", "proName": "NASDAQ:MSFT" },
+            { "description": "NVIDIA", "proName": "NASDAQ:NVDA" },
+            { "description": "Reliance", "proName": "NSE:RELIANCE" },
+            { "description": "TCS", "proName": "NSE:TCS" }
           ],
+          "showSymbolLogo": true,
           "colorTheme": "dark",
           "isTransparent": true,
-          "showSymbolLogo": true,
+          "displayMode": "adaptive",
           "locale": "in"
         }
         </script>
     </div>
+    <!-- TradingView Widget END -->
 </div>
 
 <main class="dashboard-container">
@@ -86,8 +89,8 @@
         <div class="hero-stats">
             <div class="stat-card glass-card">
                 <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
-                <div class="stat-value counter" data-target="8.00">0.00</div>
-                <div class="stat-label">MBA GPA (Term I)</div>
+                <div class="stat-value counter" data-target="7.58">0.00</div>
+                <div class="stat-label">MBA CGPA</div>
             </div>
             <div class="stat-card glass-card">
                 <div class="stat-icon"><i class="fas fa-building"></i></div>
@@ -115,7 +118,7 @@
                     <div class="timeline-content">
                         <h3>Master of Business Administration (MBA) - Finance</h3>
                         <h4>Amrita School of Business, Coimbatore</h4>
-                        <div class="kpi-tag">GPA (Term I): 8.00 / 10.00</div>
+                        <div class="kpi-tag">CGPA: 7.58 / 10.00</div>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -237,7 +240,7 @@
 
     <section id="projects" class="dashboard-section glass-panel">
         <div class="section-header">
-            <h2><i class="fas fa-project-diagram"></i> Academic Projects</h2>
+            <h2><i class="fas fa-project-diagram"></i> Projects</h2>
         </div>
         <div class="projects-grid">
             
@@ -299,8 +302,8 @@
                         <span class="tool-tag">Valuation</span>
                     </div>
                     <div class="cert-card-actions">
-                        <a href="https://trainings.internshala.com/verify_certificate" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-shield-alt"></i> Verify</a>
-                        <a href="Financial_Modeling_and_Valuation_with_AI_Training_-_Certificate_of_Completion__1_.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> View Certificate</a>
+                        <a href="https://trainings.internshala.com/view_certificate/4jag83vrrd0/1zhmoid2it0/" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-shield-alt"></i> Verify</a>
+                        <a href="https://raw.githubusercontent.com/Muruganarunachakamk/murugan-finance-portfolio/main/Financial%20Modeling%20and%20Valuation%20with%20AI%20Training%20-%20Certificate%20of%20Completion%20(1).pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> View Certificate</a>
                     </div>
                 </div>
 
@@ -320,8 +323,8 @@
                         <span class="tool-tag">Formulas</span>
                     </div>
                     <div class="cert-card-actions">
-                        <a href="https://verify.certiport.com" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-shield-alt"></i> Verify</a>
-                        <a href="Excel_2019_Associate__8_.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> View Certificate</a>
+                        <a href="https://www.credly.com/badges/81bfecf8-af87-44fe-8881-53149700ee85/linked_in_profile" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-shield-alt"></i> Verify</a>
+                        <a href="https://raw.githubusercontent.com/Muruganarunachakamk/murugan-finance-portfolio/main/Excel%202019%20Associate%20(8).pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> View Certificate</a>
                     </div>
                 </div>
 
@@ -341,7 +344,7 @@
                     </div>
                     <div class="cert-card-actions">
                         <a href="https://coursera.org/verify/FCEZ1K4L8KL3" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-shield-alt"></i> Verify</a>
-                        <a href="Coursera_Introduction_to_Gen_AI.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> View Certificate</a>
+                        <a href="https://raw.githubusercontent.com/Muruganarunachakamk/murugan-finance-portfolio/main/Coursera%20Introduction%20to%20Gen%20AI.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> View Certificate</a>
                     </div>
                 </div>
 
@@ -362,7 +365,7 @@
                     </div>
                     <div class="cert-card-actions">
                         <a href="https://coursera.org/verify/BJL1RKJOKXI1" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-shield-alt"></i> Verify</a>
-                        <a href="Coursera_Prompt_Engineering_Basics.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> View Certificate</a>
+                        <a href="https://raw.githubusercontent.com/Muruganarunachakamk/murugan-finance-portfolio/main/Coursera%20Prompt%20Engineering%20Basics.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> View Certificate</a>
                     </div>
                 </div>
 
